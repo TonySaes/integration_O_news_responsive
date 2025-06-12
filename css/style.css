@@ -6,7 +6,12 @@ body {
   font-family: "Nunito Sans", sans-serif;
   background: #faf7f5;
   padding: 0;
-  margin: 0;
+  margin: 1rem;
+  width: 375px;
+  display: grid;
+  grid-template: auto / 1fr;
+  grid-gap: 1rem;
+
 }
 
 a:focus,

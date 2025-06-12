@@ -7,11 +7,6 @@ body {
   background: #faf7f5;
   padding: 0;
   margin: 1rem;
-  width: 375px;
-  display: grid;
-  grid-template: auto / 1fr;
-  grid-gap: 1rem;
-
 }
 
 a:focus,
@@ -35,8 +30,12 @@ button:focus {
 
 .container {
   max-width: 1170px;
+  width: 100%;
   padding: 20px;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
 }
 
 .bento {
@@ -57,6 +56,9 @@ button:focus {
     ),
     url("../images/nicole.jpg") center/cover no-repeat;
   min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .logo {
@@ -217,4 +219,32 @@ button:focus {
 
 .bento__tag--news:hover {
   background-color: #00cfff;
+}
+@media (min-width: 1024px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    max-width: 100%;
+  }
+  .bento--nicole {
+    grid-row: span 2;
+  }
+  .bento--title {
+    grid-column: span 2;
+  }
+  .bento--team {
+    grid-column: span 2;
+  }
+}
+@media (min-width: 1440px) {
+  .container {
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .bento--title {
+    grid-column: span 4;
+  }
+  .bento--team {
+    grid-column: span 1;
+  }
 }

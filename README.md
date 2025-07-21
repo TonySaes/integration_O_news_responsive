@@ -36,9 +36,9 @@ Le HTML étant figé, l’accent est mis sur les **media queries**, la **mise en
 
 ## 🔍 Aperçu
 
-![Version Mobile](./images/O'news2_mobile)
-![Version tablette](./images/O'news2_tablette)
-![Version Desktop](./images/O'news2_desktop)
+![Version Mobile](./images/O'news2_mobile.png)
+![Version tablette](./images/O'news2_tablette.png)
+![Version Desktop](./images/O'news2_desktop.png)
 
 ---
 
